@@ -27,7 +27,6 @@ import java.util.List;
 @RequiredArgsConstructor
 @Slf4j
 public class UserServiceImpl implements UserService {
-
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final ModelMapper modelMapper;
@@ -161,7 +160,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Response getUserTransactions(Long id) {
-
         User user = userRepository.findById(id).orElseThrow(() -> new NotFoundException("User Not Found"));
 
         UserDTO userDTO = modelMapper.map(user, UserDTO.class);

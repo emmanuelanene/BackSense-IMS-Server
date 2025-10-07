@@ -19,11 +19,11 @@ Whether managing products, recording purchases, or tracking sales, **Backsense**
 ---
 
 ## ⚙️ Architecture Overview
-### 🏗️ System Design
+### System Design
 
 OasisCapital follows a **layered architecture** with distinct, well-defined responsibilities for maintainability and scalability.
 
-#### 🧱 High-Level Flow
+#### High-Level Flow
 
 ```text
 [ Client Application ]
